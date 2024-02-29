@@ -1,0 +1,10 @@
+{
+  "scriptShell": "pwsh", // Optional
+  "scripts": {
+    "build": "dotnet build --configuration Release",
+    "test": "dotnet test --configuration Release",
+    "ci": "dotnet r build && dotnet r test",
+    "prepack":"dotnet r build",
+    "pack":"pushd RSCG_JSON2Class && dotnet pack --configuration Release --include-source  --include-symbols --no-build -o PACK && popd"
+  }
+}
