@@ -6,11 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-<PropertyGroup>
-		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-		<CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GX</CompilerGeneratedFilesOutputPath>
-		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	</PropertyGroup>
 <ItemGroup>
   <None Remove="testData.json" />
 </ItemGroup>
@@ -18,9 +13,19 @@
   <AdditionalFiles Include="testData.json">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </AdditionalFiles>
-</ItemGroup>	
-  <ItemGroup>
+</ItemGroup>
+	<ItemGroup>
     <ProjectReference Include="..\RSCG_JSON2Class\RSCG_JSON2Class.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
+
+	<!--<ItemGroup>
+  <PackageReference Include="RSCG_JSON2Class" Version="2024.2.29.807" OutputItemType="Analyzer" ReferenceOutputAssembly="false"  />
+</ItemGroup>-->
+	<PropertyGroup>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GX</CompilerGeneratedFilesOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
 
 </Project>

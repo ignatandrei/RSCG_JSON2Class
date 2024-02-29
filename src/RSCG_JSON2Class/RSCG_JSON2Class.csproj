@@ -54,7 +54,7 @@
 		<None Include="../../readme.txt" pack="true" PackagePath="." />
 	</ItemGroup>
 	<PropertyGroup>
-		<Version>2024.2.28.1940</Version>
+		<Version>2024.2.29.807</Version>
 		<Authors>Andrei Ignat</Authors>
 		<Description>This package transforms any json into a class</Description>
 		<Title>RSCG JSON To a Class</Title>
